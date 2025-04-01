@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scene #2</title>
+  <link rel="stylesheet" href="css/scene2.css">
+  
+  <script src="js/lives.js" defer></script>
+  <script src="js/scene2.js" defer></script>
+</head>
+
+<body>
+  <div class="background-wrapper">
+    <div id="heart-container">  </div>
+
+    <div class="select-button">
+        <p>일단 주변에 수상한 흔적들을 찾아보자</p>
+        <div class="button-row">
+          <button onclick="checkAnswer(1)"
+            onmousemove="showTooltip(event, '나무에서 떨어진 벚꽃 잎이다')"
+            onmouseleave="hideTooltip()">
+            <img src="img/프레임 3/벚꽃.png" alt="아이콘1">
+          </button>
+          <button onclick="checkAnswer(2)"
+            onmousemove="showTooltip(event, '누군가가 떨어뜨린 전공책이다')"
+          onmouseleave="hideTooltip()">
+            <img src="img/프레임 3/전공책.png" alt="아이콘2">
+          </button>
+          <button onclick="checkAnswer(3)"
+            onmousemove="showTooltip(event, '누군가의 핑크색 발자국이다')"
+            onmouseleave="hideTooltip()">
+            <img src="img/프레임 3/푸앙이발자국.png" alt="아이콘3">
+          </button>
+          <button onclick="checkAnswer(4)"
+            onmousemove="showTooltip(event, '부스에서 판매하는 청벚꽃 스티커다')"
+            onmouseleave="hideTooltip()">
+            <img src="img/프레임 3/청벚꽃 푸앙.png" alt="아이콘4">
+          </button>
+        </div>
+      </div>
+  </div>
+
+  <div id="tooltip" class="hidden"></div>
+
+  <div id="popup-overlay" class="hidden"></div>
+  <div id="popup" class="hidden">
+    <p id="popup-text">틀렸습니다! 다시 시도하세요 (3)</p>
+  </div>
+
+</body>
+</html>
