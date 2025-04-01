@@ -1,5 +1,5 @@
 document.onclick=function(){
-    window.location.href="../password.html"
+    window.location.href="../index.html"
 }
 
 function showTooltip(e, text) {
